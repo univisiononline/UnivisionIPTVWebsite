@@ -25,6 +25,103 @@
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+	integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+	crossorigin="anonymous" />
+	
+		<style>
+		*:focus,
+		*:active {
+			outline: none !important;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		.wrapper {
+			display: inline-flex;
+		}
+
+		.wrapper .icon {
+			position: relative;
+			background-color: #777;
+			color: #ffffff;
+			border-radius: 50%;
+			padding: 16px;
+			margin: 4px;
+			width: 16px;
+			height: 16px;
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+
+		.wrapper .tooltip {
+			position: absolute;
+			top: 0;
+			font-size: 14px;
+			background-color: #ffffff;
+			color: #ffffff;
+			padding: 5px 8px;
+			border-radius: 5px;
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+
+		.wrapper .tooltip::before {
+			position: absolute;
+			content: "";
+			height: 8px;
+			width: 8px;
+			background-color: #ffffff;
+			bottom: -3px;
+			left: 50%;
+			transform: translate(-50%) rotate(45deg);
+			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+
+		.wrapper .icon:hover .tooltip {
+			top: -45px;
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+
+		.wrapper .icon:hover span,
+		.wrapper .icon:hover .tooltip {
+			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+		}
+
+		.wrapper .facebook:hover,
+		.wrapper .facebook:hover .tooltip,
+		.wrapper .facebook:hover .tooltip::before {
+			background-color: #3b5999;
+			color: #ffffff;
+			transition-duration: .55s;
+		}
+
+		.wrapper .messenger:hover,
+		.wrapper .messenger:hover .tooltip,
+		.wrapper .messenger:hover .tooltip::before {
+			background-color: #006AFF;
+			color: #ffffff;
+			transition-duration: .55s;
+		}
+
+		.wrapper .whatsapp:hover,
+		.wrapper .whatsapp:hover .tooltip,
+		.wrapper .whatsapp:hover .tooltip::before {
+			background-color: #82C91E;
+			color: #ffffff;
+			transition-duration: .55s;
+		}
+	</style>
 
   <title>Buy IPTV server - Best IPTV Subscription provider</title>
 </head>
@@ -53,31 +150,30 @@
     <div class="container">
       <div class="site-navigation">
         
-        <img width="145px" height="65px" class="logo m-0 float-left" style="position:relative;top:-10px" src="images/logo-smart-iptv.png" alt="">
+        <img width="145px" height="65px" class="logo m-0 float-left" style="position:relative;top:-10px" src="images/logo.png" alt="">
         
 
 
         <ul class="js-clone-nav d-none mt-1 d-lg-inline-block site-menu float-right">
-          <li class="active"><a href="index-2.html#home-section" class="nav-link">Home</a></li>
+          <li class="active"><a href="/" class="nav-link">Home</a></li>
           <li class="has-children">
             <a href="#" class="nav-link">IPTV</a>
             <ul class="dropdown">
-              <li><a href="index-2.html#pricing-section" class="nav-link">IPTV Subscription</a></li>
-              <li><a href="index-2.html#contact-section" class="nav-link">Buy Resller</a></li>
-              <li><a href="index-2.html#contact-section" class="nav-link">Restream</a></li>
+              <li><a href="trial.html" class="nav-link">IPTV Trial</a></li>
+              <li><a href="/#pricing" class="nav-link">IPTV Subscription</a></li>
+              <li><a href="/#contact" class="nav-link">Buy Resller</a></li>
             </ul>
           </li>
-          <li><a href="index-2.html#features-section" class="nav-link">Features</a></li>
-          <li><a href="index-2.html#pricing-section" class="nav-link">Pricing</a></li>
-          <li><a href="how-to-use.html" class="nav-link">How to use</a></li>
-          <li><a href="channels-list/channels-list.html" class="nav-link">Channels list</a></li>
-          <li><a href="index-2.html#contact-section" class="nav-link">Contact</a></li>
-          <li class="cta-primary"><a href="index-2.html#pricing-section">Buy Now</a></li>
+          <li><a href="/#features" class="nav-link">Features</a></li>
+          <li><a href="/#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#" class="nav-link">How To Use</a></li>
+          <li><a href="/#contact" class="nav-link">Contact</a></li>
+          <li class="cta-primary"><a href="/#pricing">Buy Now</a></li>
         </ul>
 
 
 
-        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block dark d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+        <a style="margin-top:10px;" href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block dark d-lg-none" data-toggle="collapse" data-target="#main-navbar">
           <span></span>
         </a>
 
@@ -86,7 +182,7 @@
   </nav>
   
 
-  <div class="untree_co-hero">
+  <div><br><br>
     <h1>HOW TO USE</h1>
        <div class="pd">
          <p>
@@ -345,7 +441,7 @@
   </div0> <!-- /.untree_co-hero -->
   
 
-  <div class="site-footer">
+<div class="site-footer">
 
     <div class="footer-dots"></div> <!-- /.footer-dots -->
     <div class="container">
@@ -353,17 +449,26 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="widget">
-            <h3>About SMART IPTV<span class="text-primary">.</span> </h3>
-            <p>Get full access to the entire streaming library along with your favorite live sports, breaking news, can’t-miss events, and current TV shows with SMART IPTV.</p>
+            <h3>About UNIVISION IPTV<span class="text-primary">.</span> </h3>
+            <p style="padding-left:0px;">Get full access to the entire streaming library along with your favorite live sports, breaking news, can’t-miss events, and current TV shows with UNIVISION IPTV.</p>
           </div> <!-- /.widget -->
           <div class="widget">
             <h3>Connect</h3>
             <ul class="list-unstyled social">
-              <li><a href="https://www.instagram.com/smart_iptv_pro"><span class="icon-instagram"></span></a></li>
-              <li><a href="https://twitter.com/SmartIP20081081"><span class="icon-twitter"></span></a></li>
-              <li><a href="https://www.facebook.com/Smart-IPTV-Provider-101009385278912"><span class="icon-facebook"></span></a></li>
-              <li><a href="#"><span class="icon-linkedin"></span></a></li>
-              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+				<div class="wrapper">
+				  <div class="icon facebook">
+					<a style="color: inherit;" href="https://www.facebook.com/univisiononline" target="_blank">
+					<span><i class="fab fa-facebook-f"></i></span></a>
+				  </div>
+				  <div class="icon messenger">
+					<a style="color: inherit;" href="https://m.me/univisiononline"target="_blank">
+					<span><i class="fab fa-facebook-messenger"></i></span></a>
+				  </div>
+				  <div class="icon whatsapp">
+					<a style="color: inherit;" href="https://wa.me/8801638007053" target="_blank">
+					<span><i class="fab fa-whatsapp"></i></span></a>
+				  </div>
+				</div>
             </ul>
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
@@ -372,10 +477,9 @@
           <div class="widget">
             <h3>Resources</h3>
             <ul class="list-unstyled float-left links">
-              <li><a href="#">Affiliates</a></li>
-              <li><a href="#">Site Map</a></li>
-              <li><a href="#">Compare</a></li>
-              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Own Server</a></li>
+              <li><a href="http://opplextv.com">Opplex Server</a></li>
+              <li><a href="http://www.stariptv.fun">Star Server</a></li>
             </ul>
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
@@ -384,9 +488,9 @@
           <div class="widget">
             <h3>Services</h3>
             <ul class="list-unstyled float-left links">
-              <li><a href="index-2.html#pricing-section">IPTV Subscription</a></li>
-              <li><a href="index-2.html#contact-section">Reseller</a></li>
-              <li><a href="index-2.html#contact-section">Restream</a></li>
+              <li><a href="#pricing">IPTV Subscription</a></li>
+              <li><a href="#contact">IPTV Trial</a></li>
+              <li><a href="#contact">IPTV Reseller</a></li>
             </ul>
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
@@ -396,8 +500,8 @@
           <div class="widget">
             <h3>Contact</h3>
             <ul class="list-unstyled links mb-4">
-                <li><a href="mailto:contact@smart-iptv.tech" class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span>contact@smart-iptv.tech</span></a></li>
-              <li><a href="tel://212708901852" class="d-flex"><span class="mt-1 icon-whatsapp mr-2"></span><span>+212 (708)-901852</span></a></li>
+                <li><a href="mailto:contact@univisionlive.net" class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span>contact@univisionlive.net</span></a></li>
+              <li><a href="https://wa.me/8801638007053" class="d-flex"><span class="mt-1 icon-whatsapp mr-2"></span><span>+880(1638)-007053</span></a></li>
             </ul>
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
@@ -408,7 +512,7 @@
         <div class="col-12 text-center">
           <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://smart-iptv.tech/" target="_blank" >SMART IPTV</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<br>Developed By <a href="https://nabilnewaz.com" target="_blank" >Nabil Newaz</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
         </div>
@@ -417,7 +521,7 @@
   </div> <!-- /.site-footer -->
 
 
-  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -427,6 +531,9 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/brands.min.js" integrity="sha512-vefaKmSAX3XohXhN50vLfnK12TPIO+4uRpHjXVkX726CqbicEiAQGRzsMTE+EpLkBk4noUcUYu6AQ5af2vfRLA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js" integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q==" crossorigin="anonymous"></script>
+
   
   <script src="js/custom.js"></script>
   
