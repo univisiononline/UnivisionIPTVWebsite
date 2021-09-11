@@ -1,0 +1,4 @@
+function validateForm(){var email=document.forms["myForm"]["email"].value;var Line=document.forms["myForm"]["Line"].value;document.getElementById("error-msg").style.opacity=0;document.getElementById('error-msg').innerHTML="";if(email==""||email==null){document.getElementById('error-msg').innerHTML="<div class='alert alert-warning error_message'>*Please enter your Email*</div>";fadeIn();return false;}
+if(Line==""||Line==null){document.getElementById('error-msg').innerHTML="<div class='alert alert-warning error_message'>*Please enter your  Line/Order Number*</div>";fadeIn();return false;}}
+function fadeIn(){var fade=document.getElementById("error-msg");var opacity=0;var intervalID=setInterval(function(){if(opacity<1){opacity=opacity+0.5
+fade.style.opacity=opacity;}else{clearInterval(intervalID);}},200);}
